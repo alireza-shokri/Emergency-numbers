@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'ravi_regular';
+  src: url(assets/font/Ravi-Regular.ttf)  format('truetype'),
+}
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+body{
+ background-color: rgba(245, 222, 179, 0.63);
+ font-family: 'ravi_regular';
+ 
+}
+#root{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+::-webkit-scrollbar {
+  display: none; 
+}
+

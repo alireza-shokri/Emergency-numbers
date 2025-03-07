@@ -1,0 +1,139 @@
+.btn_taggle {
+  font-size: 1.1rem;
+}
+.list {
+  list-style-type: none;
+  margin-top: 4rem;
+}
+
+.list_item {
+    background-color: rgb(0, 31, 51);
+
+  margin: 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  transition: 0.5s linear;
+  max-height: 4rem;
+  overflow: hidden;
+  border-right: 0.5rem solid orange;
+  padding: 0.5rem;
+  box-shadow: black 0px 4px 6px -1px,black 0px 2px 4px -1px;
+}
+
+.list_item_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  height: 4rem;
+  padding: 0 1rem;
+}
+.list_item_title:hover {
+  background-color: rgba(206, 199, 191, 0.589);
+  border-radius: inherit;
+}
+.Body_item {
+  margin-top: 2.5rem;
+  transition: 1s;
+  opacity: 0;
+  padding: 1rem;
+}
+
+.Body_item_open {
+  margin-top: 0;
+  opacity: 1;
+}
+.item_desc {
+  text-align: start;
+}
+
+/* options  */
+.list_options {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+
+.item_option {
+  background-color: rgba(55, 163, 163, 0.589);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid red;
+}
+.item_option_pablic{
+  background-color: rgba(55, 163, 163, 0.589);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: start;
+  border-bottom: 0.1rem solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.item_option_pablic:hover,.item_option:hover{
+  background-color: rgba(13, 77, 77, 0.911);
+}
+.desc_option {
+  margin: 0.5rem 0;
+  text-align: justify;
+}
+
+.btn_option {
+  font-family: "ravi_regular";
+
+  background-color: #2b7fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  text-align: center;
+
+  cursor: pointer;
+  border-radius: 1rem;
+  border-bottom: 0.1rem solid red;
+}
+.btn_option a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+}
+.btn_option:hover {
+  background-color: #0450c2;
+}
+.btn_option:active {
+  transform: scale(0.95);
+}
+
+/* ------------------------ */
+.classAnimation_open {
+  animation: itemOPen 0.7s linear forwards;
+}
+.classAnimation_close {
+  animation: itemClose 0.9s linear forwards;
+}
+@keyframes itemOPen {
+  from {
+    border-right: 0.5rem solid orange;
+    max-height: 4rem;
+  }
+  to {
+    border-right: 0.5rem solid green;
+    max-height: 160rem;
+  }
+}
+@keyframes itemClose {
+  from {
+    border-right: 0.5rem solid green;
+    max-height: 60rem;
+  }
+  to {
+    border-right: 0.5rem solid orange;
+    max-height: 4rem;
+  }
+}
