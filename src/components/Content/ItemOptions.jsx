@@ -20,8 +20,8 @@ function Option({ option }) {
       )}
 
       <div className={styled.parentBtnOption}>
-        {option.Btn.map((e) => (
-          <Btn infoBtn={e} key={e.btnLabel} />
+        {option.Btn.map((e,i) => (
+          <Btn connect={e.connect} btnlabel={option.optionDesc? e.btnLabel :e.connect.slice(4)} key={i} styleBtn={option.optionDesc? "btn_option": 'btn_option_public'} />
         ))}
       </div>
     </li>
